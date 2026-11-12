@@ -5,7 +5,7 @@ const topic = document.querySelector('#topic');
 const results = document.querySelector('.results');
 const empty = document.querySelector('.empty');
 const pagination = document.querySelector('#pagination');
-const pageSize = 20;
+const pageSize = 10;
 const pageGroupSize = 10;
 
 function pageUrl(page) {
@@ -46,12 +46,12 @@ function render(requestedPage = 1) {
   pagination.hidden = pageCount === 1;
   pagination.replaceChildren();
   if (pagination.hidden) return;
-  if (page > 1) pagination.append(pageLink(page - 1, 'Previous'));
+  if (page > 1) pagination.append(pageLink(page - 1, 'Previous page'));
   const first = Math.floor((page - 1) / pageGroupSize) * pageGroupSize + 1;
   for (let number = first; number <= Math.min(first + pageGroupSize - 1, pageCount); number++) {
     pagination.append(pageLink(number, String(number), number === page));
   }
-  if (page < pageCount) pagination.append(pageLink(page + 1, 'Next'));
+  if (page < pageCount) pagination.append(pageLink(page + 1, 'Next page'));
 }
 
 function updateFilters() {
