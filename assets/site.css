@@ -56,7 +56,14 @@ h2 { font-size: 1.19rem; line-height: 1.24; letter-spacing: -.025em; margin: 0; 
 .card .use { color: var(--text); }
 .use strong { display: block; font-size: .78rem; }
 .source { align-self: start; margin-top: auto; min-height: 2.75rem; display: inline-flex; gap: .4rem; align-items: center; font-size: .875rem; }
-.more { display: flex; justify-content: center; margin-block: 1.5rem 2rem; }
+.pagination { display: flex; flex-wrap: wrap; gap: .375rem; justify-content: center; margin-block: 1.5rem 2rem; }
+.pagination a {
+  display: inline-flex; min-width: 2.75rem; min-height: 2.75rem; align-items: center;
+  justify-content: center; padding-inline: .6rem; border: 1px solid var(--line);
+  border-radius: .5rem; text-decoration: none;
+}
+.pagination a[aria-current="page"] { background: var(--accent); color: var(--canvas); }
+.pagination a:hover { border-color: var(--accent); }
 button { padding-inline: 1.2rem; cursor: pointer; }
 button:hover { border-color: var(--accent); }
 footer { margin-top: 2rem; padding-block: 1.25rem 2rem; border-top: 1px solid var(--line); font-size: .875rem; }

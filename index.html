@@ -52,9 +52,19 @@
         </select>
       </label>
     </form>
-    <p class="results" role="status">182 references</p>
+    <p class="results" role="status" tabindex="-1">183 references</p>
     <p class="empty" hidden>No references match your search.</p>
     <div class="grid">
+      <article class="card" data-topic="AI engineering" data-search="opensandbox ai engineering runs agent code, tools, and browser tasks in isolated environments on docker or kubernetes. test model-generated code or browser workflows in disposable environments on your own infrastructure. https://open-sandbox.ai/">
+        <img class="cover" src="https://open-sandbox.ai/assets/architecture-overview.X4bzuOJk.svg" alt="" width="640" height="360" loading="eager" decoding="async" referrerpolicy="no-referrer">
+        <div class="card-body">
+          <span class="topic">AI engineering</span>
+          <h2>OpenSandbox</h2>
+          <p>Runs agent code, tools, and browser tasks in isolated environments on Docker or Kubernetes.</p>
+          <p class="use"><strong>Useful for</strong> Test model-generated code or browser workflows in disposable environments on your own infrastructure.</p>
+          <a class="source" href="https://open-sandbox.ai/" aria-label="Open source for OpenSandbox">open-sandbox.ai <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
       <article class="card" data-topic="AI agents" data-search="claude skills — social ai agents drafts channel-specific posts, short scripts, and content calendars. adapt a campaign brief to several social platforms. https://skillsclaude.org/skills/social">
         <img class="cover" src="https://skillsclaude.org/og.png" alt="" width="640" height="360" loading="eager" decoding="async" referrerpolicy="no-referrer">
         <div class="card-body">
@@ -76,7 +86,7 @@
         </div>
       </article>
       <article class="card" data-topic="AI" data-search="voicebox ai combines local speech synthesis, dictation, and voice cloning. record narration in a voice you own or dictate into a desktop app. https://github.com/jamiepine/voicebox">
-        <img class="cover" src="https://raw.githubusercontent.com/jamiepine/voicebox/main/.github/assets/app-screenshot-1.webp" alt="" width="640" height="360" loading="eager" decoding="async" referrerpolicy="no-referrer">
+        <img class="cover" src="https://raw.githubusercontent.com/jamiepine/voicebox/main/.github/assets/app-screenshot-1.webp" alt="" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
         <div class="card-body">
           <span class="topic">AI</span>
           <h2>Voicebox</h2>
@@ -1876,10 +1886,10 @@
         </div>
       </article>
     </div>
-    <div class="more"><button type="button" id="more" hidden>Show more</button></div>
+    <nav class="pagination" id="pagination" aria-label="Reference pages" hidden></nav>
   </main>
   <footer><div class="wrap">
-    Artwork from the original <a href="https://neuralyx.ai.dev-environment.site/news">Neuralyx News</a> cards. Each entry links to its project source.
+    References from <a href="https://neuralyx.ai.dev-environment.site/news">Neuralyx News</a> and their project sources.
   </div></footer>
 </body>
 </html>
